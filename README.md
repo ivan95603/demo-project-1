@@ -30,7 +30,7 @@ This app is meant to showcase my knowledge of following technologies/areas and a
 
 Execute only first time:
 ```bash
-    git clone address ~/demoProject
+    git clone https://github.com/ivan95603/demo-project-1.git ~/demoProject
     cd ~/demoProject
 
     cp ~/demoProject/espProjects/mqtt5/sdkconfig.template ~/demoProject/espProjects/mqtt5/sdkconfig
@@ -92,7 +92,7 @@ This demo was done with the RPI 3 and 5inch HDMI Display. Any RPI can be used bu
 - Acquire RPI 3 (If you are using any other SBC (Non RPI variants) you will need to recompile Device Tree).
 - Assemble the device.
 - Flash the board with the newest Raspbian image. Wayland works ok so it is not limited to X.Org.
-- Follow https://www.waveshare.com/wiki/5inch_HDMI_LCD manual for the touch screen support. Display by itself works out of the box or do the 
+- Follow https://www.waveshare.com/wiki/5inch_HDMI_LCD manual for the touch screen support. Display by itself works out of the box or do the following sub-steps:
     1. Download the [waveshare-ads7846.dtbo](https://files.waveshare.com/wiki/10.1inch%20HDMI%20LCD/waveshare-ads7846.dtbo) file. Copy this file to the overlays directory (/boot/overlays/).
     2. Add the following text into /boot/config.txt and reboot:
         ```bash
